@@ -2,4 +2,10 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  h3 Welcome to #{title}
+  p Post whatever you need to get off your chest anonymously. Please keep it respectful.
+  div
+    each post in messages
+      p= post.added
+      p= post.user
+      p= post.text
