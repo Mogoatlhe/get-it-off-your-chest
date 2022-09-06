@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 hello
+  form(
+    method="POST"
+    action="/new"
+  )
+    label Username
+      input(
+        type="text"
+        name="username"
+      )
+    label Message
+      input(
+        type="text"
+        name="message"
+      )
+    input(
+      type="submit"
+      value="Submit"
+    )
