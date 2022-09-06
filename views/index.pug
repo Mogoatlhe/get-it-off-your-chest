@@ -5,6 +5,7 @@ block content
   h3 Welcome to #{title}
   p Post whatever you need to get off your chest anonymously. Please keep it respectful.
   div
+    a(href="/new") New Post
     each post in messages
       p= post.added
       p= post.user
